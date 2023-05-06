@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration Form</title>
+    <link rel="stylesheet" href="C:\Users\User\Documents\html\style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="head">Employee Registration Form</div>
+        <div class="title">
+        <form action="#">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">Full Name</span> <span class="details" id="details-date">Date of Birth</span>
+                    <br>
+                    <br>
+                    <input type="text" required> <input type="text" required> <span id="input-date"><input type="date" required></span>
+                    <br>
+                    <span class="mini">First Name</span>
+                    <span class="mini" id="ls">Last Name</span>
+                    <span class="mini" id="dt">Date</span>
+        
+                </div>
+                <div class="input-box">
+                    <br>
+                    <span class="details">Email</span> <span class="details" id="pn">Phone Number</span> 
+                    <br>
+                    <br>
+                    <input type="text" class="resized" required> <span id="input-pn"><input type="text" required></span>
+                    <br>
+                    <span class="mini">example@example.com</span>
+                </div>  
+                <div class="input-box">
+                    <br>
+                    <span class="details">Address</span>
+                    <br>
+                    <br>
+                    <input type="text" class="long-resized" required>
+                    <br>
+                    <span class="mini">Street Address</span>
+                    <br>
+                    <br>
+                    <input type="text" class="long-resized" required>
+                    <br>
+                    <span class="mini">Street Address Line 2</span>
+                    <br>
+                    <br>
+                    <input type="text" class="same-length" required> <input type="text" class="same-length" required>
+                    <br>
+                    <span class="mini">City</span> <span class="mini" id="state">State / Province</span>
+                    <br>
+                    <br>
+                    <input type="text" class="long-resized" required>
+                    <br>
+                    <span class="mini">Postal / Zip Code</span>
+                </div>
+                <div class="input-box">
+                    <br>
+                    <span class="details">Applying Position</span>
+                    <br>
+                    <br>
+                    <input type="text" class="long-resized" required>
+                </div>
+                <div class="type">
+                    <br>
+                    <br>
+                    <span class="details">Type of Work</span>
+                    <br>
+                    <br>
+                    <input type="radio" name="option-work" value="1">
+                        <label for="Permanent">Permanent</label>
+                    <span id="temp-pad"><input type="radio" id="temp" name="option-work" value="Temporary">
+                        <label for="Temporary">Temporary</label></span>
+                    <br>
+                    <input type="radio" id="both" name="option-work" value="Both">
+                        <label for="Both">Both</label>
+                    <span id="other-pad"><input type="radio" id="temp" name="option-work" value="Temporary">
+                        <label for="Temporary">Other</label></span>
+                </div>
+                <div class="input-box"><span class="details"><br> Please Upload Resume</span>
+                    <br>
+                    <br>
+                    <input type="file">
+                </div>
+                <div class="input-box">
+                    <br>
+                    <br>
+                    <span class="details">Cover Letter or Additional Information</span> 
+                    <br>
+                    <textarea placeholder="..." rows="10" cols="75%"></textarea>
+                </div>
+                <div class="Veteran">
+                    <br>
+                    <br>
+                    Veteran Status (Please select the option that describes your status the best)
+                    <br>
+                    <br>
+                    <input type="radio" id="vet" name="veti" value="Permanent">
+                        <label for="Permanent">I am a veteran</label>
+                    <span id="sep-vet-pad"><input type="radio" id="vets" name="veti" value="Temporary">
+                        <label for="Temporary">I am a special disabled veteran</label></span>
+                    
+                    <br>
+                    <input type="radio" id="sepvet" name="veti" value="Both">
+                    <label for="Both">I am a recently separated veteran</label>
+                    <span id="prot-pad"><input type="radio" id="provet" name="veti" value="Other">
+                        <label for="Other">I am an other protected veteran</label></span>
+                    
+                    <br>
+                    <input type="radio" id="notvet" name="veti" value="Both">
+                    <label for="Both">I am not a veteran</label>
+                    <span id="pref-pad"><input type="radio" id="not" name="veti" value="Other">
+                        <label for="Other">Prefer Not The Answer</label></span>
+                    
+                </div>
+                <br>
+                <div class="input-box">Gender
+                    <br>
+                    <input type="radio" id="f" name="gebder" value="f">
+                    <label for="f">Female</label>
+                    <span id="male-pad"><input type="radio" id="m" name="gender" value="m">
+                        <label for="m">Male</label></span>
+                    
+                    <br>
+                    <input type="radio" id="tf" name="gender" value="tf">
+                    <label for="tf">Transgender Female</label>
+                    <span id="trans-male-pad"><input type="radio" id="tm" name="gender" value="tm">
+                        <label for="tm">Transgender Male</label></span>
+                    
+                    <br>
+                    <input type="radio" id="notgen" name="gender" value="notgen">
+                    <label for="notgen">Prefer Not The Answer</label>
+                    <span id="not-listed-pad"><input type="radio" id="not" name="gender" value="not">
+                        <label for="not">Not Listed</label></span>
+                    
+                </div>
+                <br>
+                <div class="input-box"> Disabilities
+                    <br>
+                    <input type="radio" id="vet" name="dis" value="Permanent">
+                    <label for="Permanent">I have no disability</label>
+                    <br>
+                    <input type="radio" id="vets" name="dis" value="Temporary">
+                    <label for="Temporary">I have two or more impairments and/or disabling medical conditions</label>
+                    <br>
+                    <input type="radio" id="sepvet" name="dis" value="Both">
+                    <label for="Both">I have Specific Learning Difficulty (e.g. Dyslexia/Dyspraxia/AD(H)D) </label>
+                    <br>
+                    <input type="radio" id="provet" name="dis" value="Other">
+                    <label for="Other">I have a social/communication impairment such as Asperger's Syndrome/
+                    other <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;autistic spectrum disorder    
+                    </label>
+                    <br>
+                    <input type="radio" id="notvet" name="dis" value="Both">
+                    <label for="Both">I have a long standing illness or health condition 
+                    such as cancer, HIV, diabetes, <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; chronic heart disease, or epilepsy
+                    </label>
+                    <br>
+                    <input type="radio" id="not" name="dis" value="Other">
+                    <label for="Other">I have a physical impairment or mobility issues
+                    (e.g. difficulty using arms/using <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a wheelchair or crunches)
+                    </label>
+                    <br>
+                    <input type="radio" id="not" name="dis" value="Other">
+                    <label for="Other">I am deaf or have a serious hearing impairment</label>
+                    <br>
+                    <input type="radio" id="not" name="dis" value="Other">
+                    <label for="Other">I am blind or have a serious visual impairment
+                    uncorrected by glasses
+                    </label>
+                    <br>
+                    <input type="radio" id="not" name="dis" value="Other">
+                    <label for="Other">Prefer not to answer</label>
+                    <br>
+                    <input type="radio" id="not" name="dis" value="Other">
+                    <label for="Other">I have a disability, impairment or medical condition
+                    not listed here
+                    </label>
+                </div>
+                <br>
+                <div class="input-box">Race
+                    <br>
+                    <input type="radio" id="a" name="r" value="a">
+                    <label for="a">American Natice or Alaska Native</label>
+                    <span id="asian-pad"><input type="radio" id="as" name="r" value="as">
+                        <label for="as">Asian</label></span>
+
+                    <br>
+                    <input type="radio" id="b" name="r" value="b">
+                    <label for="b">Black or African American</label>
+                    <span id="native-pad"><input type="radio" id="h" name="r" value="h">
+                        <label for="h">Native Hawaiian or Other Pacific Islander</label></span>
+    
+                    <br>
+                    <input type="radio" id="w" name="r" value="w">
+                    <label for="w">White</label>
+                    <span id="two-pad"><input type="radio" id="two" name="r" value="two">
+                        <label for="two">Two or more races</label></span>
+                    
+                    <br>
+                    <input type="radio" id="nope" name="r" value="nope">
+                    <label for="nope">Decline to Specify</label>
+                    <span id="other-1-pad"><input type="radio" id="oth" name="r" value="oth">
+                        <label for="oth">Other</label></span>
+                    
+                </div>
+                <br>
+                <div class="iput-class"> Additional Notes
+                <br>
+                <textarea placeholder="..." rows="10" cols="75%"></textarea>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div><input type="submit" id="submit"></div>
+        </form>
+        </div>
+    </div>
+</body>
+</html>

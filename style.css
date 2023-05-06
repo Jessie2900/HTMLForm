@@ -1,0 +1,125 @@
+.container{
+   display: grid;
+   place-items: center;
+   
+   outline-style: double;
+   background: rgb(65,94,117);
+   background: linear-gradient(90deg, rgba(65,94,117,1) 0%, rgba(130,201,235,1) 50%, rgba(12,123,139,1) 96%);
+}
+
+.head{
+    font-weight: 100;
+    font-size: 40px;
+    padding-left: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#details-date{
+    padding-left: 290px;
+}
+
+#input-date{
+    padding-left: 40px;
+}
+
+#ls{
+    padding-left: 105px;
+}
+
+#dt{
+    padding-left: 147px;
+}
+
+#pn{
+    padding-left: 335px;
+}
+
+#input-pn{
+    padding-left: 40px;
+}
+
+.resized{
+    width: 350px;
+}
+
+.long-resized{
+    width: 570px;
+}
+
+.same-length{
+    width: 279px;
+}
+
+#state{
+    padding-left: 259px;
+}
+
+.big-text-box{
+    width: 570px;
+    height: 300px;
+}
+
+#temp-pad{
+    padding-left: 200px;
+}
+
+#other-pad{
+    padding-left: 237px;
+}
+
+#sep-vet-pad{
+    padding-left: 175px;
+}
+
+#prot-pad{
+    padding-left: 55px;
+}
+
+#pref-pad{
+    padding-left: 151px;
+}
+
+#male-pad{
+    padding-left: 218px;
+}
+
+#trans-male-pad{
+    padding-left: 135px;
+}
+
+#not-listed-pad{
+    padding-left: 117px;
+}
+
+#asian-pad{
+    padding-left: 43px;
+}
+
+#native-pad{
+    padding-left: 89px;
+}
+
+#two-pad{
+    padding-left: 223px;
+}
+
+#other-1-pad{
+    padding-left: 143px;
+}
+
+.details{
+    font-size: 25px;
+}
+
+.mini{
+    color: white;
+}
+
+input:focus {
+    background-color:#00e8ff;
+  }
+
+textarea:focus {
+    background-color:#00e8ff;
+  }
